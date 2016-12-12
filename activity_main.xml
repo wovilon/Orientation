@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TableLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:stretchColumns="*">
+            <TableRow>
+
+                <Button
+                    android:text="@string/BtHor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/button"
+                    android:onClick="onHorClick" />
+
+                <Button
+                    android:text="@string/Vert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button2"
+                    android:layout_marginTop="11dp"
+                    android:onClick="onVertClick" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:text="@string/BtSensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button3"
+                    android:layout_marginTop="11dp"
+                    android:onClick="onBtSensorClick" />
+
+                <Button
+                    android:text="@string/BtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/button5" />
+            </TableRow>
+            <TableRow>
+
+                <Button
+                    android:text="@string/BtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/button6"
+                    />
+
+                <Button
+                    android:text="@string/BtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/button7" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:text="@string/TextView" />
+</LinearLayout>
